@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Define Beauty Aesthetics Dartmouth</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf8fa;
+      color: #333;
+    }
+    header {
+      background-color: #0d1b2a;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      max-width: 180px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    header p { margin: 5px 0 15px 0; }
+    .vision {
+      background-color: #f0e6f0;
+      padding: 15px;
+      border-left: 5px solid #fff;
+      margin: 15px auto 0 auto;
+      border-radius: 5px;
+      color: #0d1b2a;
+      max-width: 900px;
+    }
+    .vision h3 { margin-top: 0; }
+    nav {
+      text-align: center;
+      margin: 15px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0d1b2a;
+      font-weight: bold;
+    }
+    section { max-width: 900px; margin: 30px auto; padding: 0 15px; }
+    h2 { color: #0d1b2a; border-bottom: 2px solid #0d1b2a; padding-bottom: 5px; }
+    .treatments ul { list-style: none; padding: 0; }
+    .treatments li { padding: 8px 0; border-bottom: 1px solid #ddd; }
+    form { display: flex; flex-direction: column; }
+    form label { margin-top: 10px; font-weight: bold; }
+    form input, form textarea, form select { padding: 8px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px; }
+    form button { margin-top: 20px; padding: 12px; background-color: #0070ba; color: #fff; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; }
+    .paypal-btn { display:inline-block; padding:12px 20px; background-color:#0070ba; color:#fff; text-decoration:none; border-radius:5px; font-weight:bold; margin-top: 15px; }
+    .policy { background-color:#f9f0f5; padding:15px; border-radius:8px; margin-top:20px; }
+    footer { text-align: center; padding: 15px 0; background-color: #0d1b2a; color: #fff; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Picture 2.jpg" alt="Define Beauty Aesthetics Logo">
+  <h1>Define Beauty Aesthetics Dartmouth</h1>
+  <p>Qualified nurse & independent nurse prescriber</p>
+
+  <div class="vision">
+    <h3>Our Vision</h3>
+    <p>At Define Beauty, our mission is to help you look and feel your absolute best through safe, professional, and personalized aesthetic treatments. Led by a fully insured nurse and independent prescriber, we combine medical expertise with a passion for beauty, ensuring every treatment is tailored to your unique needs. We are committed to the highest standards of care, using advanced techniques and trusted products to deliver natural, confidence-boosting results in a welcoming and professional environment.</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#treatments">Treatments</a>
+  <a href="#booking">Book Appointment</a>
+  <a href="#contact">Contact</a>
+  <a href="feedback.html">Feedback</a>
+</nav>
+
+<section id="treatments" class="treatments">
+  <h2>Treatments & Prices</h2>
+  <h3>Injectable Treatments</h3>
+  <ul>
+    <li>Anti-wrinkle: 1 area £160, 2 areas £215, 3 areas £270</li>
+    <li>Lip Flip £120</li>
+    <li>Chin £150</li>
+    <li>Natural Lip Filler £100 / 0.5ml</li>
+    <li>B12 Injection £40</li>
+    <li>Hayfever Injection £80</li>
+  </ul>
+  <h3>Facial Treatments</h3>
+  <ul>
+    <li>Hydradermabrasion £90 (block of 5 £360)</li>
+    <li>24K Gold Facial £50</li>
+    <li>Dermaplaning £35</li>
+    <li>Globe Facial £33</li>
+    <li>Define Beauty Facial £29</li>
+  </ul>
+  <h3>Eye & Brow Treatments</h3>
+  <ul>
+    <li>Brow Wax £8</li>
+    <li>Brow Tint £18</li>
+    <li>Lash Tint £10</li>
+    <li>Lash Lift & Tint £19</li>
+  </ul>
+  <p>Gift vouchers available. Opening February 2026 — mobile treatments available before clinic opening.</p>
+  <p><em>Further treatments will be added as the clinic grows its client base.</em></p>
+</section>
+
+<section id="booking">
+  <h2>Book an Appointment</h2>
+  <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" name="name" id="name" required>
+    
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" id="email" required>
+    
+    <label for="treatment">Treatment:</label>
+    <input type="text" name="treatment" id="treatment" required>
+    
+    <label for="datetime">Preferred Date & Time:</label>
+    <input type="datetime-local" name="datetime" id="datetime" required>
+    
+    <label for="health">Health Issues / Allergies:</label>
+    <textarea name="health" id="health" rows="4"></textarea>
+
+    <label>Smoking:</label>
+    <select name="smoking" required>
+      <option value="">Please select</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label>Pregnancy:</label>
+    <select name="pregnancy" required>
+      <option value="">Please select</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+    
+    <label>Additional Requests:</label>
+    <input type="checkbox" name="evening" value="Evening Appointment"> Evening Appointment<br>
+    <input type="checkbox" name="group" value="Group Booking"> Group Booking<br>
+    <input type="checkbox" name="home" value="Home Visit"> Home Visit<br>
+    
+    <button type="submit">Submit Booking Request</button>
+  </form>
+
+  <p>For <strong>Anti-Wrinkle, Filler, and Dermabrasion treatments</strong>, please pay a £25 deposit via PayPal:</p>
+  <a href="https://paypal.me/DefineBeauty25" target="_blank" class="paypal-btn">Pay Deposit £25</a>
+
+  <div class="policy">
+    <h3>Cancellation & Deposit Policy</h3>
+    <ul>
+      <li>£25 deposit required for Anti-Wrinkle, Filler, and Dermabrasion treatments.</li>
+      <li>10% deposit required for all other treatments.</li>
+    </ul>
+    <p>Deposits are refundable if cancelled at least 48 hours before the appointment. Cancellations less than 48 hours prior will forfeit the deposit.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email us to book your appointment: <a href="mailto:definebeautyaestheticsdartmout@gmail.com">definebeautyaestheticsdartmout@gmail.com</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Define Beauty Aesthetics Dartmouth
+</footer>
+
+</body>
+</html>
